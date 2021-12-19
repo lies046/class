@@ -4,11 +4,8 @@ require_once 'Person.php';
 
 class BusinessPerson extends Person
 {
-    /**
-     * @return string
-     */
-    public function work(): string
+    public function work()
   {
-      return $this->firstName . $this->lastName . 'は働いています';
+      print $this->firstName. $this->lastName. 'は働いています';
   }
 }

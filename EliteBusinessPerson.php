@@ -4,8 +4,8 @@ require_once 'BusinessPerson.php';
 
 class EliteBusinessPerson extends BusinessPerson
 {
-    public function work(): string
+    public function work()
     {
-        return $this->firstName . $this->lastName . 'はバリバリ働いています。';
+        print $this->firstName . $this->lastName . 'はバリバリ働いています。';
     }
 }
