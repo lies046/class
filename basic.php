@@ -6,6 +6,7 @@ require_once 'TriangleFigure.php';
 require_once 'BusinessPerson.php';
 require_once 'EliteBusinessPerson.php';
 require_once 'Hetare.php';
+require_once 'Foreign.php';
 
 $p = new Person('山田','太郎');
 $tri = new TriangleFigure();
@@ -27,3 +28,5 @@ echo '<br>';
 print $ebp->work();
 echo '<br>';
 print $h->work();
+$f = new Foreign('山田','アレン','史郎');
+$f->show();
