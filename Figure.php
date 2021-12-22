@@ -1,13 +1,13 @@
 <?php
 
-class Figure
+abstract class Figure
 {
     protected $width;
     protected $height;
 
     /**
-     * @param $width
-     * @param $height
+     * @param float $width
+     * @param float $height
      */
     public function __construct(float $width, float $height)
     {
@@ -15,8 +15,6 @@ class Figure
         $this->height = $height;
     }
 
-    public function getArea(): float
-    {
-        return 0;
-    }
+    protected abstract function getArea(): float;
+
 }
