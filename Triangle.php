@@ -4,8 +4,8 @@ require_once 'FigureInterFace.php';
 
 class Triangle implements FigureInterFace
 {
-    private $width;
-    private $height;
+    private float $width;
+    private float $height;
 
     /**
      * @param float $width
