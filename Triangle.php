@@ -1,11 +1,26 @@
 <?php
 
-require_once 'Figure.php';
+require_once 'FigureInterFace.php';
 
-class Triangle extends Figure
+class Triangle implements FigureInterFace
 {
-    public function getArea():float
+    private $width;
+    private $height;
+
+    /**
+     * @param float $width
+     * @param float $height
+     */
+    public function __construct(float $width, float $height)
+    {
+        $this->width = $width;
+        $this->height = $height;
+    }
+
+    public function getArea(): float
     {
         return $this->width * $this->height / 2;
     }
+
+
 }
